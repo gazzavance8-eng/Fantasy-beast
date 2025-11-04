@@ -1,148 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fantasy Beast 2025/26</title>
-    <header>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fantasy Beast 2025/26</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #e6f0ff;
+      color: #1a1a1a;
+      line-height: 1.6;
+    }
+
+    /* Header with background */
+    header {
+      background: linear-gradient(rgba(0, 31, 63, 0.8), rgba(0, 64, 128, 0.8)),
+        url('images/creature-silhouette.png') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 30px 15px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    }
+
+    /* Navigation */
+    nav {
+      margin-top: 15px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    nav a {
+      color: #ffcc00;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+    }
+
+    header img {
+      margin-top: 20px;
+      height: 80px;
+      max-width: 100%;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    h1, h2, h5 {
+      margin: 10px 0;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    /* Tables */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      background: #ffffff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    table thead {
+      background: #004080;
+      color: white;
+    }
+
+    th, td {
+      padding: 12px 10px;
+      text-align: left;
+      font-size: 0.95rem;
+    }
+
+    tbody tr:nth-child(even) {
+      background: #d6e9ff;
+    }
+
+    tbody tr:hover {
+      background: #b3d1ff;
+    }
+
+    /* Footer */
+    footer {
+      background: #001f3f;
+      color: white;
+      text-align: center;
+      padding: 15px 10px;
+      font-size: 0.9rem;
+      margin-top: 30px;
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 8px 0;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 4px;
+      }
+
+      header img {
+        height: 60px;
+      }
+
+      main {
+        padding: 15px;
+      }
+
+      th, td {
+        font-size: 0.85rem;
+        padding: 10px 6px;
+      }
+
+      ul {
+        padding-left: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
     <div class="header-content">
-        <h1>Fantasy Beast European Cups 2025/26</h1><br>
-        <nav>
-            <a href="tables.html">Tables</a>
-            <a href="clfixtures.html">CL Fixtures</a>
-            <a href="ecfixtures.html">EC Fixtures</a>
-            <a href="wall-of-shame.html">Wall of Shame</a>
-        </nav>
-        <!-- Logo on far right -->
-        <img src="PL.png" alt="Premier League Logo" height="120" style="margin-top: 20px">
+      <h1>Fantasy Beast European Cups 2025/26</h1>
+      <nav>
+        <a href="tables.html">Tables</a>
+        <a href="clfixtures.html">CL Fixtures</a>
+        <a href="ecfixtures.html">EC Fixtures</a>
+        <a href="wall-of-shame.html">Wall of Shame</a>
+      </nav>
+      <img src="PL.png" alt="Premier League Logo" />
     </div>
-</header>
+  </header>
 
-    <main>
-<h2> <span style="color: red;">Welcome to the inaugural, and probably only, Fantasy Beast European Bonanza! Good luck all!</span><h2><br>
+  <main>
+    <h2><span style="color: red;">Welcome to the inaugural, and probably only, Fantasy Beast European Bonanza! Good luck all!</span></h2>
 
-<h2> Rules and Prize info below <h2><br>
+    
 
-<h1><u>Rules</u><h1>
+    <h1><u>Rules</u></h1>
+    <ul>
+      <li>Competition kicks off GW22</li>
+      <li>Based on your league position at the end of GW19 (equal chip usage)</li>
+      <li>Top 10 go into the Champions League, bottom 10 go into Europa Conference</li>
+      <li>Two groups of 5 in each comp, play each other twice</li>
+      <li>Top 2 from each group qualify to play a 2-leg semi-final</li>
+      <li>SFs played over GWs 34 & 36</li>
+      <li>Finals on GW38 - exciting!</li>
+      <li><strong>Important change:</strong> Chips are in play!! (Too awkward otherwise and it's my rules so fuck it - use your chips how you want)</li>
+    </ul>
 
-<ul><h5>
-   <li>Competition kicks off GW22</li><br>
-<li>Based on your league position at the end of GW19 (equal chip usage)</li><br>
-<li>Top 10 go into the Champions League, bottom 10 go into Europa Conference</li><br>
-<li>Two groups of 5 in each comp, play each other twice</li><br>
-<li>Top 2 from each group qualify to play a 2 leg semi final</li><br>
-<li>SFs played over GWs 34 & 36</li><br>
-<li>Finals on GW38 - exciting!</li><br>
-<li>**Important change to original plan - Chips are in play!!**</li> 
-(too awkward otherwise and it's my rules so fuck it - use your chips how you want)<br><h5>
+    <h1><u>Prizes</u></h1>
+    <p style="color: orange;">
+      Champions League Winner: £60<br><br>
+      Europa Conference Winner: £40<br><br>
+      All this effort for £100. My goodness.
+    </p>
+  </main>
 
-</ul>
-
-<h1><u>Prizes</u><h1>
-
-<span style="color: orange;">Champions League Winner: £60<br><br>
-Europa Conference Winner: £40<br><br>
-
-All this effort for £100. My goodness.  
-
-
-
-
-
-           </main>
-
-    <footer>
-        <p>&copy; 2025 Fantasy Beast League</p>
-    </footer>
-
-
+  <footer>
+    <p>&copy; 2025 Fantasy Beast League</p>
+  </footer>
 
 </body>
 </html>
-<style>
-ul {
-list-style-type: square}
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background: #e6f0ff;
-    color: #1a1a1a;
-}
-
-/* Header with fantasy creature background */ header {
-    background: linear-gradient(rgba(0, 31, 63, 0.8), rgba(0, 64, 128, 0.8)),
-                url('images/creature-silhouette.png') center/cover no-repeat;
-    color: white;
-    padding: 40px 20px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2); }
-
-header h1 {
-    margin: 0;
-    font-size: 4rem;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.8); }
-
-/* Navigation Links */
-nav {
-    margin-top: 10px;
-}
-
-nav a {
-    color: #ffcc00;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-nav a:hover {
-    color: #ffffff;
-}
-
-/* Main Content */
-main {
-    padding: 20px;
-}
-
-/* Tables */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 30px;
-    background: #ffffff;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.1); }
-
-table thead {
-    background: #004080;
-    color: white;
-}
-
-th, td {
-    padding: 12px 15px;
-    text-align: left;
-}
-
-tbody tr:nth-child(even) {
-    background: #d6e9ff;
-}
-
-tbody tr:hover {
-    background: #b3d1ff;
-}
-
-/* Footer */
-footer {
-    background: #001f3f;
-    color: white;
-    text-align: center;
-    padding: 12px;
-    font-size: 14px;
-    margin-top: 30px;
-}
-<style> 
-
 
 
 
