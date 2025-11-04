@@ -26,6 +26,152 @@
             border-radius: 5px 5px 0 0;
             margin: 0;
         }
+/* General Page Styles */ 
+body { 
+  font-family: Arial, sans-serif; 
+  margin: 0; 
+  background: #e6f0ff; 
+  color: #1a1a1a; 
+  overflow-x: hidden; 
+} 
+
+/* Header */ 
+header { 
+  background: linear-gradient(rgba(0, 31, 63, 0.8), rgba(0, 64, 128, 0.8)); 
+  color: white; 
+  padding: 15px 20px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  z-index: 1000; 
+} 
+
+/* Header Title */ 
+header h1 { 
+  margin: 0; 
+  font-size: 1.8em; 
+} 
+
+/* Navigation */ 
+nav { 
+  margin-top: 10px; 
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 10px; 
+} 
+
+nav a { 
+  color: #ffcc00; 
+  text-decoration: none; 
+  font-weight: bold; 
+  transition: color 0.3s; 
+  font-size: 1em; 
+} 
+
+nav a:hover { 
+  color: #ffffff; 
+} 
+
+/* Main Content */ 
+main { 
+  padding: 120px 20px 20px; /* space below fixed header */ 
+} 
+
+/* Table container for horizontal scroll */ 
+.table-container { 
+  width: 100%; 
+  overflow-x: auto; 
+  margin-bottom: 30px; 
+  -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */ 
+} 
+
+/* Tables */ 
+table { 
+  min-width: 600px; /* ensures scroll appears on small screens */ 
+  border-collapse: collapse; 
+  background: #ffffff; 
+  border-radius: 8px; 
+  overflow: hidden; 
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); 
+  width: 100%; 
+} 
+
+table thead { 
+  background: #004080; 
+  color: white; 
+} 
+
+th, td { 
+  padding: 12px 15px; 
+  text-align: center; 
+  white-space: nowrap; /* keeps columns from wrapping */ 
+} 
+
+/* Alternate row shading */ 
+tbody tr:nth-child(even) { 
+  background: #d6e9ff; 
+} 
+
+tbody tr:hover { 
+  background: #b3d1ff; 
+} 
+
+/* Footer */ 
+footer { 
+  background: #001f3f; 
+  color: white; 
+  text-align: center; 
+  padding: 12px; 
+  font-size: 14px; 
+  margin-top: 30px; 
+} 
+
+/* -------------------- Responsive Design -------------------- */ 
+@media (max-width: 768px) { 
+  header { 
+    padding: 10px 12px; 
+  } 
+
+  header h1 { 
+    font-size: 1.6em; 
+  } 
+
+  nav { 
+    gap: 5px; 
+  } 
+
+  nav a { 
+    font-size: 1.2em; 
+    padding: 4px 6px; 
+  } 
+
+  main { 
+    padding-top: 100px; 
+  } 
+} 
+
+@media (max-width: 480px) { 
+  header { 
+    padding: 8px 10px; 
+  } 
+
+  header h1 { 
+    font-size: 1.3em; 
+  } 
+
+  nav a { 
+    font-size: 1.0em; 
+    padding: 3px 5px; 
+  } 
+
+  main { 
+    padding-top: 85px; 
+  } 
+} 
+
     </style>
 </head>
 <body>
@@ -36,6 +182,7 @@
         <nav>
             <a href="index.html">Home</a>
             <a href="tables.html">Tables</a>
+            <a href="clfixtures.html">CL Fixtures</a>
             <a href="ecfixtures.html">EC Fixtures</a>
             <a href="wall-of-shame.html">Wall of Shame</a>
         </nav>
@@ -45,6 +192,8 @@
         
 
         <section>
+
+<br><br><br><br><br><br><br><br>
             
                     <h3>Beast Champions League – Matchday 1 (GW22)</h3>
                     <table>
@@ -350,5 +499,7 @@ footer {
     margin-top: 30px;
 }
 <style> 
+
+
 
 
