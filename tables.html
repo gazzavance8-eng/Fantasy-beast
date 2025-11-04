@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tables - Fantasy Beast</title>
     <link rel="stylesheet" href="style.css">
-        <style> 
+          <style> 
     /* Page-specific layout */ 
     .matchday-row { 
       display: flex; 
@@ -37,15 +37,22 @@
       color: #1a1a1a; 
     } 
 
+    /* Fixed header styling */ 
     header { 
-      background: linear-gradient(rgba(0, 31, 63, 0.8), rgba(0, 64, 128, 0.8)); 
+      position: fixed; 
+      top: 0; 
+      left: 0; 
+      right: 0; 
+      z-index: 1000; 
+      background: linear-gradient(rgba(0, 31, 63, 0.9), rgba(0, 64, 128, 0.9)); 
       color: white; 
       padding: 15px 20px; 
-      box-shadow: 0 4px 6px rgba(0,0,0,0.2); 
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3); 
     } 
 
     header h1 { 
       margin: 0; 
+      text-align: center; 
     } 
 
     nav { 
@@ -67,15 +74,16 @@
       color: #ffffff; 
     } 
 
+    /* Space below fixed header so content doesn’t hide behind it */ 
     main { 
-      padding: 20px; 
+      padding: 100px 20px 20px; 
     } 
 
-    /* Wrapper for table scroll */ 
+    /* Scrollable table container */ 
     .table-container { 
       width: 100%; 
       overflow-x: auto; 
-      -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */ 
+      -webkit-overflow-scrolling: touch; 
       margin-bottom: 30px; 
     } 
 
@@ -86,12 +94,15 @@
       border-radius: 8px; 
       overflow: hidden; 
       box-shadow: 0 3px 6px rgba(0,0,0,0.1); 
-      min-width: 600px; /* ensures scroll trigger on small screens */ 
+      min-width: 600px; /* enables scroll on small screens */ 
     } 
 
     table thead { 
       background: #004080; 
       color: white; 
+      position: sticky; /* sticky header inside scrollable table */ 
+      top: 0; 
+      z-index: 5; 
     } 
 
     th, td { 
@@ -149,6 +160,7 @@
       } 
     } 
   </style> 
+
 
 
 </head>
@@ -570,6 +582,8 @@ footer {
     margin-top: 30px;
 }
 <style> 
+
+
 
 
 
