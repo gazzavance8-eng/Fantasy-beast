@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tables - Fantasy Beast</title>
     <link rel="stylesheet" href="style.css">
-      <style> 
-    /* --- Page-specific layout tweaks --- */ 
+        <style> 
+    /* Page-specific layout */ 
     .matchday-row { 
       display: flex; 
       flex-wrap: wrap; 
@@ -15,7 +15,7 @@
     } 
     .matchday-col { 
       flex: 1; 
-      min-width: 280px; /* prevents columns from shrinking too small */ 
+      min-width: 280px; 
     } 
     .matchday-col table { 
       width: 100%; 
@@ -29,7 +29,7 @@
       margin: 0; 
     } 
 
-    /* --- Base styling --- */ 
+    /* Base styling */ 
     body { 
       font-family: Arial, sans-serif; 
       margin: 0; 
@@ -71,14 +71,22 @@
       padding: 20px; 
     } 
 
+    /* Wrapper for table scroll */ 
+    .table-container { 
+      width: 100%; 
+      overflow-x: auto; 
+      -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */ 
+      margin-bottom: 30px; 
+    } 
+
     table { 
       width: 100%; 
       border-collapse: collapse; 
-      margin-bottom: 30px; 
       background: #ffffff; 
       border-radius: 8px; 
       overflow: hidden; 
       box-shadow: 0 3px 6px rgba(0,0,0,0.1); 
+      min-width: 600px; /* ensures scroll trigger on small screens */ 
     } 
 
     table thead { 
@@ -109,10 +117,10 @@
       margin-top: 30px; 
     } 
 
-    /* --- Responsive design --- */ 
+    /* Responsive tweaks */ 
     @media (max-width: 768px) { 
-      header h1 { 
-        font-size: 1.5em; 
+      .matchday-row { 
+        flex-direction: column; 
       } 
 
       nav { 
@@ -123,20 +131,6 @@
       th, td { 
         padding: 8px; 
         font-size: 0.9em; 
-      } 
-
-      table { 
-        display: block; 
-        overflow-x: auto; /* horizontal scroll for small screens */ 
-        -webkit-overflow-scrolling: touch; 
-      } 
-
-      .matchday-row { 
-        flex-direction: column; 
-      } 
-
-      .matchday-col { 
-        width: 100%; 
       } 
     } 
 
@@ -155,6 +149,7 @@
       } 
     } 
   </style> 
+
 
 </head>
 <body>
@@ -575,5 +570,7 @@ footer {
     margin-top: 30px;
 }
 <style> 
+
+
 
 
