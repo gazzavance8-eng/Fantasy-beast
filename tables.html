@@ -10,14 +10,14 @@
 body { 
   font-family: Arial, sans-serif; 
   margin: 0; 
-  background: #e6f0ff; /* light blue background */ 
+  background: #e6f0ff; 
   color: #1a1a1a; 
   overflow-x: hidden; 
 } 
 
 /* Header */ 
 header { 
-  background: linear-gradient(rgba(0, 31, 63, 0.8), rgba(0, 64, 128, 0.8)); /* navy to deep blue */ 
+  background: linear-gradient(rgba(0, 31, 63, 0.8), rgba(0, 64, 128, 0.8)); 
   color: white; 
   padding: 15px 20px; 
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
@@ -44,7 +44,7 @@ nav {
 } 
 
 nav a { 
-  color: #ffcc00; /* gold accent */ 
+  color: #ffcc00; 
   text-decoration: none; 
   font-weight: bold; 
   transition: color 0.3s; 
@@ -57,48 +57,46 @@ nav a:hover {
 
 /* Main Content */ 
 main { 
-  padding: 120px 20px 20px; /* offset for fixed header */ 
+  padding: 120px 20px 20px; /* space below fixed header */ 
+} 
+
+/* Table container for horizontal scroll */ 
+.table-container { 
+  width: 100%; 
+  overflow-x: auto; 
+  margin-bottom: 30px; 
+  -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */ 
 } 
 
 /* Tables */ 
 table { 
-  width: 100%; 
+  min-width: 600px; /* ensures scroll appears on small screens */ 
   border-collapse: collapse; 
-  margin-bottom: 30px; 
   background: #ffffff; 
   border-radius: 8px; 
   overflow: hidden; 
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); 
+  width: 100%; 
 } 
 
 table thead { 
-  background: #004080; /* deep blue header */ 
+  background: #004080; 
   color: white; 
-} 
-
-table, th, td { 
-  border: none; 
 } 
 
 th, td { 
   padding: 12px 15px; 
   text-align: center; 
+  white-space: nowrap; /* keeps columns from wrapping */ 
 } 
 
 /* Alternate row shading */ 
 tbody tr:nth-child(even) { 
-  background: #d6e9ff; /* soft blue */ 
+  background: #d6e9ff; 
 } 
 
 tbody tr:hover { 
-  background: #b3d1ff; /* highlight row */ 
-} 
-
-/* Make tables horizontally scrollable on small screens */ 
-table { 
-  display: block; 
-  overflow-x: auto; 
-  white-space: nowrap; 
+  background: #b3d1ff; 
 } 
 
 /* Footer */ 
@@ -131,7 +129,7 @@ footer {
   } 
 
   main { 
-    padding-top: 100px; /* reduce offset */ 
+    padding-top: 100px; 
   } 
 } 
 
@@ -150,7 +148,7 @@ footer {
   } 
 
   main { 
-    padding-top: 85px; /* smaller offset for small phones */ 
+    padding-top: 85px; 
   } 
 } 
 
@@ -582,6 +580,7 @@ footer {
     margin-top: 30px;
 }
 <style> 
+
 
 
 
